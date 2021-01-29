@@ -1,0 +1,1484 @@
+[2020-11-23 16:52:15 +0800] [7881] [INFO] Starting gunicorn 20.0.4
+[2020-11-23 16:52:15 +0800] [7881] [INFO] Listening at: http://0.0.0.0:8802 (7881)
+[2020-11-23 16:52:15 +0800] [7881] [INFO] Using worker: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+[2020-11-23 16:52:15 +0800] [7884] [INFO] Booting worker with pid: 7884
+[2020-11-23 16:54:16 +0800] [8410] [INFO] Starting gunicorn 20.0.4
+[2020-11-23 16:54:16 +0800] [8410] [INFO] Listening at: http://0.0.0.0:8802 (8410)
+[2020-11-23 16:54:16 +0800] [8410] [INFO] Using worker: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+[2020-11-23 16:54:16 +0800] [8413] [INFO] Booting worker with pid: 8413
+[2020-11-23 16:55:18 +0800] [8756] [INFO] Starting gunicorn 20.0.4
+[2020-11-23 16:55:18 +0800] [8756] [INFO] Listening at: http://0.0.0.0:8802 (8756)
+[2020-11-23 16:55:18 +0800] [8756] [INFO] Using worker: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+[2020-11-23 16:55:18 +0800] [8759] [INFO] Booting worker with pid: 8759
+[2020-11-23 17:17:25 +0800] [13852] [INFO] Starting gunicorn 20.0.4
+[2020-11-23 17:17:25 +0800] [13852] [INFO] Listening at: http://0.0.0.0:8802 (13852)
+[2020-11-23 17:17:25 +0800] [13852] [INFO] Using worker: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+[2020-11-23 17:17:25 +0800] [13855] [INFO] Booting worker with pid: 13855
+[2020-11-23 17:48:56,100] ERROR in app: Exception on /titan/post/api [POST]
+Traceback (most recent call last):
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/common/service.py", line 76, in start
+    stdin=PIPE)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/gevent/subprocess.py", line 627, in __init__
+    restore_signals, start_new_session)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/gevent/subprocess.py", line 1505, in _execute_child
+    raise child_exception
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\86138\\AppData\\Local\\Google\\Chrome\\Application\\chromedriver'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/API_PORT.py", line 41, in post
+    obj = Titan()
+  File "/www/wwwroot/www.stargame.com/titan_worm.py", line 36, in __init__
+    self.driver = webdriver.Chrome('C:\\Users\\86138\\AppData\\Local\\Google\\Chrome\\Application\\chromedriver', chrome_options=self.options)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/common/service.py", line 83, in start
+    os.path.basename(self.path), self.start_error_message)
+selenium.common.exceptions.WebDriverException: Message: 'C:\Users\86138\AppData\Local\Google\Chrome\Application\chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+[2020-11-23 18:15:43 +0800] [26511] [INFO] Starting gunicorn 20.0.4
+[2020-11-23 18:15:43 +0800] [26511] [INFO] Listening at: http://0.0.0.0:8802 (26511)
+[2020-11-23 18:15:43 +0800] [26511] [INFO] Using worker: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+[2020-11-23 18:15:43 +0800] [26514] [INFO] Booting worker with pid: 26514
+[2020-11-23 18:17:30,102] ERROR in app: Exception on /titan/post/api [POST]
+Traceback (most recent call last):
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/API_PORT.py", line 41, in post
+    obj = Titan()
+  File "/www/wwwroot/www.stargame.com/titan_worm.py", line 37, in __init__
+    self.driver = webdriver.Chrome('/usr/bin/chromedriver', chrome_options=self.options)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/chrome/webdriver.py", line 81, in __init__
+    desired_capabilities=desired_capabilities)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 252, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 85
+
+[2020-11-23 18:39:01,075] ERROR in app: Exception on /titan/post/api [POST]
+Traceback (most recent call last):
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/API_PORT.py", line 41, in post
+    obj = Titan()
+  File "/www/wwwroot/www.stargame.com/titan_worm.py", line 37, in __init__
+    self.driver = webdriver.Chrome('/usr/bin/chromedriver', chrome_options=self.options)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/chrome/webdriver.py", line 81, in __init__
+    desired_capabilities=desired_capabilities)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 252, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 85
+
+[2020-11-23 18:57:48 +0800] [3875] [INFO] Starting gunicorn 20.0.4
+[2020-11-23 18:57:48 +0800] [3875] [INFO] Listening at: http://0.0.0.0:8802 (3875)
+[2020-11-23 18:57:48 +0800] [3875] [INFO] Using worker: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+[2020-11-23 18:57:48 +0800] [3878] [INFO] Booting worker with pid: 3878
+[2020-11-23 18:58:50,092] ERROR in app: Exception on /titan/post/api [POST]
+Traceback (most recent call last):
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/API_PORT.py", line 41, in post
+    obj = Titan()
+  File "/www/wwwroot/www.stargame.com/titan_worm.py", line 37, in __init__
+    self.driver = webdriver.Chrome('/usr/bin/chromedriver', chrome_options=self.options)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/chrome/webdriver.py", line 81, in __init__
+    desired_capabilities=desired_capabilities)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 252, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 85
+
+[2020-11-23 19:04:02 +0800] [5479] [INFO] Starting gunicorn 20.0.4
+[2020-11-23 19:04:02 +0800] [5479] [INFO] Listening at: http://0.0.0.0:8802 (5479)
+[2020-11-23 19:04:02 +0800] [5479] [INFO] Using worker: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+[2020-11-23 19:04:02 +0800] [5482] [INFO] Booting worker with pid: 5482
+[2020-11-23 19:04:08,519] ERROR in app: Exception on /titan/post/api [POST]
+Traceback (most recent call last):
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/API_PORT.py", line 41, in post
+    obj = Titan()
+  File "/www/wwwroot/www.stargame.com/titan_worm.py", line 37, in __init__
+    self.driver = webdriver.Chrome('/usr/bin/chromedriver', chrome_options=self.options)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/chrome/webdriver.py", line 81, in __init__
+    desired_capabilities=desired_capabilities)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 252, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 85
+
+[2020-11-23 19:12:42 +0800] [7601] [INFO] Starting gunicorn 20.0.4
+[2020-11-23 19:12:42 +0800] [7601] [INFO] Listening at: http://0.0.0.0:8802 (7601)
+[2020-11-23 19:12:42 +0800] [7601] [INFO] Using worker: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+[2020-11-23 19:12:42 +0800] [7609] [INFO] Booting worker with pid: 7609
+[2020-11-23 19:12:48,045] ERROR in app: Exception on /titan/post/api [POST]
+Traceback (most recent call last):
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/API_PORT.py", line 41, in post
+    obj = Titan()
+  File "/www/wwwroot/www.stargame.com/titan_worm.py", line 37, in __init__
+    self.driver = webdriver.Chrome('/usr/bin/chromedriver', chrome_options=self.options)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/chrome/webdriver.py", line 81, in __init__
+    desired_capabilities=desired_capabilities)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 252, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 85
+
+[2020-11-23 19:53:52 +0800] [17475] [INFO] Starting gunicorn 20.0.4
+[2020-11-23 19:53:52 +0800] [17475] [INFO] Listening at: http://0.0.0.0:8802 (17475)
+[2020-11-23 19:53:52 +0800] [17475] [INFO] Using worker: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+[2020-11-23 19:53:52 +0800] [17478] [INFO] Booting worker with pid: 17478
+[2020-11-23 19:54:06,097] ERROR in app: Exception on /titan/post/api [POST]
+Traceback (most recent call last):
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/API_PORT.py", line 41, in post
+    obj = Titan()
+  File "/www/wwwroot/www.stargame.com/titan_worm.py", line 37, in __init__
+    self.driver = webdriver.Chrome('/usr/bin/chromedriver', chrome_options=self.options)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/chrome/webdriver.py", line 81, in __init__
+    desired_capabilities=desired_capabilities)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 252, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 85
+
+[2020-11-23 20:01:57 +0800] [19435] [INFO] Starting gunicorn 20.0.4
+[2020-11-23 20:01:57 +0800] [19435] [INFO] Listening at: http://0.0.0.0:8802 (19435)
+[2020-11-23 20:01:57 +0800] [19435] [INFO] Using worker: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+[2020-11-23 20:01:57 +0800] [19438] [INFO] Booting worker with pid: 19438
+[2020-11-23 20:02:08,700] ERROR in app: Exception on /titan/post/api [POST]
+Traceback (most recent call last):
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/API_PORT.py", line 41, in post
+    obj = Titan()
+  File "/www/wwwroot/www.stargame.com/titan_worm.py", line 37, in __init__
+    self.driver = webdriver.Chrome('/usr/local/bin/chromedriver', chrome_options=self.options)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/chrome/webdriver.py", line 81, in __init__
+    desired_capabilities=desired_capabilities)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 252, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 87
+Current browser version is 80.0.3987.100 with binary path /opt/google/chrome/google-chrome
+
+[2020-11-23 20:04:53 +0800] [20263] [INFO] Starting gunicorn 20.0.4
+[2020-11-23 20:04:53 +0800] [20263] [INFO] Listening at: http://0.0.0.0:8802 (20263)
+[2020-11-23 20:04:53 +0800] [20263] [INFO] Using worker: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+[2020-11-23 20:04:53 +0800] [20266] [INFO] Booting worker with pid: 20266
+[2020-11-23 20:05:10,885] ERROR in app: Exception on /titan/post/api [POST]
+Traceback (most recent call last):
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/API_PORT.py", line 43, in post
+    return JsonResponse({'STATUE':200, 'MESSAGE': 'SUCCESS'})
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/django/http/response.py", line 559, in __init__
+    super().__init__(content=data, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/django/http/response.py", line 291, in __init__
+    self.content = content
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/django/http/response.py", line 321, in content
+    content = self.make_bytes(value)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/django/http/response.py", line 236, in make_bytes
+    return bytes(value.encode(self.charset))
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/django/http/response.py", line 85, in charset
+    return settings.DEFAULT_CHARSET
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/django/conf/__init__.py", line 79, in __getattr__
+    self._setup(name)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/django/conf/__init__.py", line 64, in _setup
+    % (desc, ENVIRONMENT_VARIABLE))
+django.core.exceptions.ImproperlyConfigured: Requested setting DEFAULT_CHARSET, but settings are not configured. You must either define the environment variable DJANGO_SETTINGS_MODULE or call settings.configure() before accessing settings.
+[2020-11-23 21:00:51,580] ERROR in app: Exception on /titan/post/api [POST]
+Traceback (most recent call last):
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/API_PORT.py", line 43, in post
+    return JsonResponse({'STATUE':200, 'MESSAGE': 'SUCCESS'})
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/django/http/response.py", line 559, in __init__
+    super().__init__(content=data, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/django/http/response.py", line 291, in __init__
+    self.content = content
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/django/http/response.py", line 321, in content
+    content = self.make_bytes(value)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/django/http/response.py", line 236, in make_bytes
+    return bytes(value.encode(self.charset))
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/django/http/response.py", line 85, in charset
+    return settings.DEFAULT_CHARSET
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/django/conf/__init__.py", line 79, in __getattr__
+    self._setup(name)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/django/conf/__init__.py", line 64, in _setup
+    % (desc, ENVIRONMENT_VARIABLE))
+django.core.exceptions.ImproperlyConfigured: Requested setting DEFAULT_CHARSET, but settings are not configured. You must either define the environment variable DJANGO_SETTINGS_MODULE or call settings.configure() before accessing settings.
+[2020-11-23 21:01:42,878] ERROR in app: Exception on /titan/post/api [POST]
+Traceback (most recent call last):
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/API_PORT.py", line 43, in post
+    return JsonResponse({'STATUE':200, 'MESSAGE': 'SUCCESS'})
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/django/http/response.py", line 559, in __init__
+    super().__init__(content=data, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/django/http/response.py", line 291, in __init__
+    self.content = content
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/django/http/response.py", line 321, in content
+    content = self.make_bytes(value)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/django/http/response.py", line 236, in make_bytes
+    return bytes(value.encode(self.charset))
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/django/http/response.py", line 85, in charset
+    return settings.DEFAULT_CHARSET
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/django/conf/__init__.py", line 79, in __getattr__
+    self._setup(name)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/django/conf/__init__.py", line 64, in _setup
+    % (desc, ENVIRONMENT_VARIABLE))
+django.core.exceptions.ImproperlyConfigured: Requested setting DEFAULT_CHARSET, but settings are not configured. You must either define the environment variable DJANGO_SETTINGS_MODULE or call settings.configure() before accessing settings.
+[2020-11-23 21:02:30,443] ERROR in app: Exception on /titan/post/api [POST]
+Traceback (most recent call last):
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/API_PORT.py", line 43, in post
+    return JsonResponse({'STATUE':200, 'MESSAGE': 'SUCCESS'})
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/django/http/response.py", line 559, in __init__
+    super().__init__(content=data, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/django/http/response.py", line 291, in __init__
+    self.content = content
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/django/http/response.py", line 321, in content
+    content = self.make_bytes(value)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/django/http/response.py", line 236, in make_bytes
+    return bytes(value.encode(self.charset))
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/django/http/response.py", line 85, in charset
+    return settings.DEFAULT_CHARSET
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/django/conf/__init__.py", line 79, in __getattr__
+    self._setup(name)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/django/conf/__init__.py", line 64, in _setup
+    % (desc, ENVIRONMENT_VARIABLE))
+django.core.exceptions.ImproperlyConfigured: Requested setting DEFAULT_CHARSET, but settings are not configured. You must either define the environment variable DJANGO_SETTINGS_MODULE or call settings.configure() before accessing settings.
+[2020-11-23 21:17:55 +0800] [3008] [INFO] Starting gunicorn 20.0.4
+[2020-11-23 21:17:55 +0800] [3008] [INFO] Listening at: http://0.0.0.0:8802 (3008)
+[2020-11-23 21:17:55 +0800] [3008] [INFO] Using worker: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+[2020-11-23 21:17:55 +0800] [3011] [INFO] Booting worker with pid: 3011
+[2020-11-23 21:17:55 +0800] [3011] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/gunicorn/workers/ggevent.py", line 162, in init_process
+    super().init_process()
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/root/.pyenv/versions/3.6.2/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/www/wwwroot/www.stargame.com/API_PORT.py", line 7, in <module>
+    from dota2_worm import DOTA2
+  File "/www/wwwroot/www.stargame.com/dota2_worm.py", line 63
+    i = Image.open('../media/dota_code.png")  # 打开截图
+                                                   ^
+SyntaxError: EOL while scanning string literal
+[2020-11-23 21:17:55 +0800] [3011] [INFO] Worker exiting (pid: 3011)
+[2020-11-23 21:17:55 +0800] [3008] [INFO] Shutting down: Master
+[2020-11-23 21:17:55 +0800] [3008] [INFO] Reason: Worker failed to boot.
+[2020-11-23 21:17:56 +0800] [3026] [INFO] Starting gunicorn 20.0.4
+[2020-11-23 21:17:56 +0800] [3026] [INFO] Listening at: http://0.0.0.0:8802 (3026)
+[2020-11-23 21:17:56 +0800] [3026] [INFO] Using worker: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+[2020-11-23 21:17:56 +0800] [3033] [INFO] Booting worker with pid: 3033
+[2020-11-23 21:17:56 +0800] [3033] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/gunicorn/workers/ggevent.py", line 162, in init_process
+    super().init_process()
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/root/.pyenv/versions/3.6.2/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/www/wwwroot/www.stargame.com/API_PORT.py", line 7, in <module>
+    from dota2_worm import DOTA2
+  File "/www/wwwroot/www.stargame.com/dota2_worm.py", line 63
+    i = Image.open('../media/dota_code.png")  # 打开截图
+                                                   ^
+SyntaxError: EOL while scanning string literal
+[2020-11-23 21:17:56 +0800] [3033] [INFO] Worker exiting (pid: 3033)
+[2020-11-23 21:17:56 +0800] [3026] [INFO] Shutting down: Master
+[2020-11-23 21:17:56 +0800] [3026] [INFO] Reason: Worker failed to boot.
+[2020-11-23 21:23:01 +0800] [4196] [INFO] Starting gunicorn 20.0.4
+[2020-11-23 21:23:01 +0800] [4196] [INFO] Listening at: http://0.0.0.0:8802 (4196)
+[2020-11-23 21:23:01 +0800] [4196] [INFO] Using worker: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+[2020-11-23 21:23:01 +0800] [4199] [INFO] Booting worker with pid: 4199
+[2020-11-23 21:23:44,079] ERROR in app: Exception on /titan/post/api [POST]
+Traceback (most recent call last):
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/API_PORT.py", line 43, in post
+    return JsonResponse({'STATUE':200, 'MESSAGE': 'SUCCESS'})
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/django/http/response.py", line 559, in __init__
+    super().__init__(content=data, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/django/http/response.py", line 291, in __init__
+    self.content = content
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/django/http/response.py", line 321, in content
+    content = self.make_bytes(value)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/django/http/response.py", line 236, in make_bytes
+    return bytes(value.encode(self.charset))
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/django/http/response.py", line 85, in charset
+    return settings.DEFAULT_CHARSET
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/django/conf/__init__.py", line 79, in __getattr__
+    self._setup(name)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/django/conf/__init__.py", line 64, in _setup
+    % (desc, ENVIRONMENT_VARIABLE))
+django.core.exceptions.ImproperlyConfigured: Requested setting DEFAULT_CHARSET, but settings are not configured. You must either define the environment variable DJANGO_SETTINGS_MODULE or call settings.configure() before accessing settings.
+[2020-11-23 21:25:31 +0800] [5158] [INFO] Starting gunicorn 20.0.4
+[2020-11-23 21:25:31 +0800] [5158] [INFO] Listening at: http://0.0.0.0:8802 (5158)
+[2020-11-23 21:25:31 +0800] [5158] [INFO] Using worker: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+[2020-11-23 21:25:31 +0800] [5161] [INFO] Booting worker with pid: 5161
+[2020-11-23 21:26:08,255] ERROR in app: Exception on /titan/post/api [POST]
+Traceback (most recent call last):
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/API_PORT.py", line 43, in post
+    return JsonResponse({'STATUE':200, 'MESSAGE': 'SUCCESS'})
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/django/http/response.py", line 559, in __init__
+    super().__init__(content=data, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/django/http/response.py", line 291, in __init__
+    self.content = content
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/django/http/response.py", line 321, in content
+    content = self.make_bytes(value)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/django/http/response.py", line 236, in make_bytes
+    return bytes(value.encode(self.charset))
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/django/http/response.py", line 85, in charset
+    return settings.DEFAULT_CHARSET
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/django/conf/__init__.py", line 79, in __getattr__
+    self._setup(name)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/django/conf/__init__.py", line 64, in _setup
+    % (desc, ENVIRONMENT_VARIABLE))
+django.core.exceptions.ImproperlyConfigured: Requested setting DEFAULT_CHARSET, but settings are not configured. You must either define the environment variable DJANGO_SETTINGS_MODULE or call settings.configure() before accessing settings.
+[2020-11-23 21:29:25 +0800] [6249] [INFO] Starting gunicorn 20.0.4
+[2020-11-23 21:29:25 +0800] [6249] [INFO] Listening at: http://0.0.0.0:8802 (6249)
+[2020-11-23 21:29:25 +0800] [6249] [INFO] Using worker: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+[2020-11-23 21:29:25 +0800] [6252] [INFO] Booting worker with pid: 6252
+[2020-11-23 21:29:46,763] ERROR in app: Exception on /titan/post/api [POST]
+Traceback (most recent call last):
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/API_PORT.py", line 43, in post
+    return JsonResponse({'STATUE':200, 'MESSAGE': data})
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/django/http/response.py", line 559, in __init__
+    super().__init__(content=data, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/django/http/response.py", line 291, in __init__
+    self.content = content
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/django/http/response.py", line 321, in content
+    content = self.make_bytes(value)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/django/http/response.py", line 236, in make_bytes
+    return bytes(value.encode(self.charset))
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/django/http/response.py", line 85, in charset
+    return settings.DEFAULT_CHARSET
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/django/conf/__init__.py", line 79, in __getattr__
+    self._setup(name)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/django/conf/__init__.py", line 64, in _setup
+    % (desc, ENVIRONMENT_VARIABLE))
+django.core.exceptions.ImproperlyConfigured: Requested setting DEFAULT_CHARSET, but settings are not configured. You must either define the environment variable DJANGO_SETTINGS_MODULE or call settings.configure() before accessing settings.
+[2020-11-23 21:34:46 +0800] [7709] [INFO] Starting gunicorn 20.0.4
+[2020-11-23 21:34:46 +0800] [7709] [INFO] Listening at: http://0.0.0.0:8802 (7709)
+[2020-11-23 21:34:46 +0800] [7709] [INFO] Using worker: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+[2020-11-23 21:34:46 +0800] [7712] [INFO] Booting worker with pid: 7712
+[2020-11-23 21:34:46 +0800] [7712] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/gunicorn/workers/ggevent.py", line 162, in init_process
+    super().init_process()
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/root/.pyenv/versions/3.6.2/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/www/wwwroot/www.stargame.com/API_PORT.py", line 22, in <module>
+    class DevelopmentConfig(DefaultConfig):
+NameError: name 'DefaultConfig' is not defined
+[2020-11-23 21:34:46 +0800] [7712] [INFO] Worker exiting (pid: 7712)
+[2020-11-23 21:34:46 +0800] [7709] [INFO] Shutting down: Master
+[2020-11-23 21:34:46 +0800] [7709] [INFO] Reason: Worker failed to boot.
+[2020-11-23 21:34:47 +0800] [7728] [INFO] Starting gunicorn 20.0.4
+[2020-11-23 21:34:47 +0800] [7728] [INFO] Listening at: http://0.0.0.0:8802 (7728)
+[2020-11-23 21:34:47 +0800] [7728] [INFO] Using worker: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+[2020-11-23 21:34:47 +0800] [7735] [INFO] Booting worker with pid: 7735
+[2020-11-23 21:34:48 +0800] [7735] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/gunicorn/workers/ggevent.py", line 162, in init_process
+    super().init_process()
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/root/.pyenv/versions/3.6.2/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/www/wwwroot/www.stargame.com/API_PORT.py", line 22, in <module>
+    class DevelopmentConfig(DefaultConfig):
+NameError: name 'DefaultConfig' is not defined
+[2020-11-23 21:34:48 +0800] [7735] [INFO] Worker exiting (pid: 7735)
+[2020-11-23 21:34:48 +0800] [7728] [INFO] Shutting down: Master
+[2020-11-23 21:34:48 +0800] [7728] [INFO] Reason: Worker failed to boot.
+[2020-11-23 21:39:35 +0800] [8847] [INFO] Starting gunicorn 20.0.4
+[2020-11-23 21:39:35 +0800] [8847] [INFO] Listening at: http://0.0.0.0:8802 (8847)
+[2020-11-23 21:39:35 +0800] [8847] [INFO] Using worker: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+[2020-11-23 21:39:35 +0800] [8850] [INFO] Booting worker with pid: 8850
+[2020-11-23 21:41:32 +0800] [9369] [INFO] Starting gunicorn 20.0.4
+[2020-11-23 21:41:32 +0800] [9369] [INFO] Listening at: http://0.0.0.0:8802 (9369)
+[2020-11-23 21:41:32 +0800] [9369] [INFO] Using worker: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+[2020-11-23 21:41:32 +0800] [9372] [INFO] Booting worker with pid: 9372
+[2020-11-23 21:44:19 +0800] [10198] [INFO] Starting gunicorn 20.0.4
+[2020-11-23 21:44:19 +0800] [10198] [INFO] Listening at: http://0.0.0.0:8802 (10198)
+[2020-11-23 21:44:19 +0800] [10198] [INFO] Using worker: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+[2020-11-23 21:44:19 +0800] [10201] [INFO] Booting worker with pid: 10201
+[2020-11-23 22:00:43 +0800] [14423] [INFO] Starting gunicorn 20.0.4
+[2020-11-23 22:00:43 +0800] [14423] [INFO] Listening at: http://0.0.0.0:8802 (14423)
+[2020-11-23 22:00:43 +0800] [14423] [INFO] Using worker: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+[2020-11-23 22:00:43 +0800] [14426] [INFO] Booting worker with pid: 14426
+[2020-11-23 22:01:45 +0800] [14872] [INFO] Starting gunicorn 20.0.4
+[2020-11-23 22:01:45 +0800] [14872] [INFO] Listening at: http://0.0.0.0:8802 (14872)
+[2020-11-23 22:01:45 +0800] [14872] [INFO] Using worker: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+[2020-11-23 22:01:45 +0800] [14875] [INFO] Booting worker with pid: 14875
+[2020-11-23 22:04:08 +0800] [15548] [INFO] Starting gunicorn 20.0.4
+[2020-11-23 22:04:08 +0800] [15548] [INFO] Listening at: http://0.0.0.0:8802 (15548)
+[2020-11-23 22:04:08 +0800] [15548] [INFO] Using worker: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+[2020-11-23 22:04:08 +0800] [15551] [INFO] Booting worker with pid: 15551
+[2020-11-23 22:10:55 +0800] [17379] [INFO] Starting gunicorn 20.0.4
+[2020-11-23 22:10:55 +0800] [17379] [INFO] Listening at: http://0.0.0.0:8802 (17379)
+[2020-11-23 22:10:55 +0800] [17379] [INFO] Using worker: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+[2020-11-23 22:10:55 +0800] [17382] [INFO] Booting worker with pid: 17382
+[2020-11-23 22:11:24 +0800] [17676] [INFO] Starting gunicorn 20.0.4
+[2020-11-23 22:11:24 +0800] [17676] [INFO] Listening at: http://0.0.0.0:8802 (17676)
+[2020-11-23 22:11:24 +0800] [17676] [INFO] Using worker: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+[2020-11-23 22:11:24 +0800] [17679] [INFO] Booting worker with pid: 17679
+[2020-11-23 22:14:46,743] ERROR in app: Exception on /perfectmany/post/api [POST]
+Traceback (most recent call last):
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/API_PORT.py", line 147, in post
+    data = obj.run(an, cn, cp, dis, ser)
+  File "/www/wwwroot/www.stargame.com/perfect_many_worm.py", line 190, in run
+    self.fight_code(aa)
+  File "/www/wwwroot/www.stargame.com/perfect_many_worm.py", line 152, in fight_code
+    x = int(x_offset)
+UnboundLocalError: local variable 'x_offset' referenced before assignment
+[2020-11-23 22:16:31,703] ERROR in app: Exception on /perfectmany/post/api [POST]
+Traceback (most recent call last):
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/API_PORT.py", line 147, in post
+    data = obj.run(an, cn, cp, dis, ser)
+  File "/www/wwwroot/www.stargame.com/perfect_many_worm.py", line 190, in run
+    self.fight_code(aa)
+  File "/www/wwwroot/www.stargame.com/perfect_many_worm.py", line 152, in fight_code
+    x = int(x_offset)
+UnboundLocalError: local variable 'x_offset' referenced before assignment
+[2020-11-23 22:22:17 +0800] [20423] [INFO] Starting gunicorn 20.0.4
+[2020-11-23 22:22:17 +0800] [20423] [INFO] Listening at: http://0.0.0.0:8802 (20423)
+[2020-11-23 22:22:17 +0800] [20423] [INFO] Using worker: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+[2020-11-23 22:22:17 +0800] [20426] [INFO] Booting worker with pid: 20426
+[2020-11-23 22:24:14,243] ERROR in app: Exception on /goldenhill/post/api [POST]
+Traceback (most recent call last):
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/API_PORT.py", line 190, in post
+    obj = GoldenHill(ch)
+  File "/www/wwwroot/www.stargame.com/golden_hill_worm.py", line 41, in __init__
+    self.url = 'https://charge.xoyo.com/pay?item={}&way=kcard'.format(gh_value(cchoice))
+  File "/www/wwwroot/www.stargame.com/values.py", line 21, in gh_value
+    return value_dict[data]
+KeyError: None
+[2020-11-23 22:27:35 +0800] [21798] [INFO] Starting gunicorn 20.0.4
+[2020-11-23 22:27:35 +0800] [21798] [INFO] Listening at: http://0.0.0.0:8802 (21798)
+[2020-11-23 22:27:35 +0800] [21798] [INFO] Using worker: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+[2020-11-23 22:27:35 +0800] [21802] [INFO] Booting worker with pid: 21802
+[2020-11-23 22:33:39,321] ERROR in app: Exception on /neteasy/post/api [POST]
+Traceback (most recent call last):
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/API_PORT.py", line 162, in post
+    return jsonify(data)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/json/__init__.py", line 321, in jsonify
+    dumps(data, indent=indent, separators=separators) + '\n',
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/json/__init__.py", line 179, in dumps
+    rv = _json.dumps(obj, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/simplejson/__init__.py", line 412, in dumps
+    **kw).encode(obj)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/simplejson/encoder.py", line 296, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/simplejson/encoder.py", line 378, in iterencode
+    return _iterencode(o, 0)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/json/__init__.py", line 81, in default
+    return _json.JSONEncoder.default(self, o)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/simplejson/encoder.py", line 273, in default
+    o.__class__.__name__)
+TypeError: Object of type NoSuchElementException is not JSON serializable
+[2020-11-23 22:38:51,019] ERROR in app: Exception on /neteasy/post/api [POST]
+Traceback (most recent call last):
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/API_PORT.py", line 162, in post
+    return jsonify(data)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/json/__init__.py", line 321, in jsonify
+    dumps(data, indent=indent, separators=separators) + '\n',
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/json/__init__.py", line 179, in dumps
+    rv = _json.dumps(obj, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/simplejson/__init__.py", line 412, in dumps
+    **kw).encode(obj)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/simplejson/encoder.py", line 296, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/simplejson/encoder.py", line 378, in iterencode
+    return _iterencode(o, 0)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/json/__init__.py", line 81, in default
+    return _json.JSONEncoder.default(self, o)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/simplejson/encoder.py", line 273, in default
+    o.__class__.__name__)
+TypeError: Object of type NoSuchElementException is not JSON serializable
+[2020-11-23 22:44:46,083] ERROR in app: Exception on /neteasy/post/api [POST]
+Traceback (most recent call last):
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/API_PORT.py", line 161, in post
+    data = obj.run(acc, pwd, num, cn, cp)
+  File "/www/wwwroot/www.stargame.com/neteasy_worm.py", line 159, in run
+    self.login(acc, pwd)
+  File "/www/wwwroot/www.stargame.com/neteasy_worm.py", line 82, in login
+    self.driver.find_element_by_xpath('//a[@title="官网"]').click()  # 跳转至官网
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <a href="https://xyq.163.com/index.html" title="官网" target="_blank" class="gw-btn flex_center">...</a> is not clickable at point (199, 119). Other element would receive the click: <div class="com_pop flex_center login_pop">...</div>
+  (Session info: headless chrome=80.0.3987.100)
+
+[2020-11-23 22:46:32,792] ERROR in app: Exception on /neteasy/post/api [POST]
+Traceback (most recent call last):
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/API_PORT.py", line 161, in post
+    data = obj.run(acc, pwd, num, cn, cp)
+  File "/www/wwwroot/www.stargame.com/neteasy_worm.py", line 159, in run
+    self.login(acc, pwd)
+  File "/www/wwwroot/www.stargame.com/neteasy_worm.py", line 82, in login
+    self.driver.find_element_by_xpath('//a[@title="官网"]').click()  # 跳转至官网
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <a href="https://xyq.163.com/index.html" title="官网" target="_blank" class="gw-btn flex_center">...</a> is not clickable at point (199, 119). Other element would receive the click: <div class="com_pop flex_center login_pop">...</div>
+  (Session info: headless chrome=80.0.3987.100)
+
+[2020-11-23 22:49:50 +0800] [27327] [INFO] Starting gunicorn 20.0.4
+[2020-11-23 22:49:50 +0800] [27327] [INFO] Listening at: http://0.0.0.0:8802 (27327)
+[2020-11-23 22:49:50 +0800] [27327] [INFO] Using worker: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+[2020-11-23 22:49:50 +0800] [27330] [INFO] Booting worker with pid: 27330
+[2020-11-23 22:50:33,261] ERROR in app: Exception on /neteasy/post/api [POST]
+Traceback (most recent call last):
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/API_PORT.py", line 162, in post
+    return jsonify(data)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/json/__init__.py", line 321, in jsonify
+    dumps(data, indent=indent, separators=separators) + '\n',
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/json/__init__.py", line 179, in dumps
+    rv = _json.dumps(obj, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/simplejson/__init__.py", line 412, in dumps
+    **kw).encode(obj)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/simplejson/encoder.py", line 296, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/simplejson/encoder.py", line 378, in iterencode
+    return _iterencode(o, 0)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/json/__init__.py", line 81, in default
+    return _json.JSONEncoder.default(self, o)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/simplejson/encoder.py", line 273, in default
+    o.__class__.__name__)
+TypeError: Object of type NoSuchElementException is not JSON serializable
+[2020-11-23 22:50:46,347] ERROR in app: Exception on /neteasy/post/api [POST]
+Traceback (most recent call last):
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/API_PORT.py", line 162, in post
+    return jsonify(data)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/json/__init__.py", line 321, in jsonify
+    dumps(data, indent=indent, separators=separators) + '\n',
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/json/__init__.py", line 179, in dumps
+    rv = _json.dumps(obj, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/simplejson/__init__.py", line 412, in dumps
+    **kw).encode(obj)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/simplejson/encoder.py", line 296, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/simplejson/encoder.py", line 378, in iterencode
+    return _iterencode(o, 0)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/json/__init__.py", line 81, in default
+    return _json.JSONEncoder.default(self, o)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/simplejson/encoder.py", line 273, in default
+    o.__class__.__name__)
+TypeError: Object of type NoSuchElementException is not JSON serializable
+[2020-11-23 22:51:12,037] ERROR in app: Exception on /neteasy/post/api [POST]
+Traceback (most recent call last):
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/API_PORT.py", line 162, in post
+    return jsonify(data)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/json/__init__.py", line 321, in jsonify
+    dumps(data, indent=indent, separators=separators) + '\n',
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/json/__init__.py", line 179, in dumps
+    rv = _json.dumps(obj, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/simplejson/__init__.py", line 412, in dumps
+    **kw).encode(obj)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/simplejson/encoder.py", line 296, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/simplejson/encoder.py", line 378, in iterencode
+    return _iterencode(o, 0)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/json/__init__.py", line 81, in default
+    return _json.JSONEncoder.default(self, o)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/simplejson/encoder.py", line 273, in default
+    o.__class__.__name__)
+TypeError: Object of type NoSuchElementException is not JSON serializable
+[2020-11-23 22:53:29 +0800] [28608] [INFO] Starting gunicorn 20.0.4
+[2020-11-23 22:53:29 +0800] [28608] [INFO] Listening at: http://0.0.0.0:8802 (28608)
+[2020-11-23 22:53:29 +0800] [28608] [INFO] Using worker: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+[2020-11-23 22:53:29 +0800] [28611] [INFO] Booting worker with pid: 28611
+[2020-11-23 22:57:45,021] ERROR in app: Exception on /goldenhill/post/api [POST]
+Traceback (most recent call last):
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/API_PORT.py", line 190, in post
+    obj = GoldenHill(ch)
+  File "/www/wwwroot/www.stargame.com/golden_hill_worm.py", line 41, in __init__
+    self.url = 'https://charge.xoyo.com/pay?item={}&way=kcard'.format(gh_value(cchoice))
+  File "/www/wwwroot/www.stargame.com/values.py", line 21, in gh_value
+    return value_dict[data]
+KeyError: '剑网3'
+[2020-11-23 23:03:28 +0800] [31014] [INFO] Starting gunicorn 20.0.4
+[2020-11-23 23:03:28 +0800] [31014] [INFO] Listening at: http://0.0.0.0:8802 (31014)
+[2020-11-23 23:03:28 +0800] [31014] [INFO] Using worker: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+[2020-11-23 23:03:28 +0800] [31017] [INFO] Booting worker with pid: 31017
+[2020-11-23 23:04:08,924] ERROR in app: Exception on /goldenhill/post/api [POST]
+Traceback (most recent call last):
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/API_PORT.py", line 191, in post
+    data = obj.run(data, choice, an, cn, cp)
+  File "/www/wwwroot/www.stargame.com/golden_hill_worm.py", line 256, in run
+    self.parse(data, choice, an, cn, cp)
+  File "/www/wwwroot/www.stargame.com/golden_hill_worm.py", line 55, in parse
+    self.driver.find_element_by_xpath(choice_sever(choice)).click()
+  File "/www/wwwroot/www.stargame.com/values.py", line 63, in choice_sever
+    return choice_dict[data]
+KeyError: None
+[2020-11-23 23:12:12,128] ERROR in app: Exception on /goldenhill/post/api [POST]
+Traceback (most recent call last):
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/API_PORT.py", line 191, in post
+    data = obj.run(data, choice, an, cn, cp)
+  File "/www/wwwroot/www.stargame.com/golden_hill_worm.py", line 256, in run
+    self.parse(data, choice, an, cn, cp)
+  File "/www/wwwroot/www.stargame.com/golden_hill_worm.py", line 55, in parse
+    self.driver.find_element_by_xpath(choice_sever(choice)).click()
+  File "/www/wwwroot/www.stargame.com/values.py", line 63, in choice_sever
+    return choice_dict[data]
+KeyError: None
+[2020-11-23 23:16:27,210] ERROR in app: Exception on /goldenhill/post/api [POST]
+Traceback (most recent call last):
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/API_PORT.py", line 191, in post
+    data = obj.run(data, choice, an, cn, cp)
+  File "/www/wwwroot/www.stargame.com/golden_hill_worm.py", line 256, in run
+    self.parse(data, choice, an, cn, cp)
+  File "/www/wwwroot/www.stargame.com/golden_hill_worm.py", line 63, in parse
+    self.driver.find_element_by_xpath(choice_moneyclassfiy(data)).click()  # _6 通宝,_1月卡,_2点卡
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id="pay_recharge_type_6"]"}
+  (Session info: headless chrome=80.0.3987.100)
+
+[2020-11-23 23:20:42,444] ERROR in app: Exception on /goldenhill/post/api [POST]
+Traceback (most recent call last):
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/API_PORT.py", line 191, in post
+    data = obj.run(data, choice, an, cn, cp)
+  File "/www/wwwroot/www.stargame.com/golden_hill_worm.py", line 256, in run
+    self.parse(data, choice, an, cn, cp)
+  File "/www/wwwroot/www.stargame.com/golden_hill_worm.py", line 63, in parse
+    self.driver.find_element_by_xpath(choice_moneyclassfiy(data)).click()  # _6 通宝,_1月卡,_2点卡
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id="pay_recharge_type_1"]"}
+  (Session info: headless chrome=80.0.3987.100)
+
+[2020-11-23 23:25:29 +0800] [4188] [INFO] Starting gunicorn 20.0.4
+[2020-11-23 23:25:29 +0800] [4188] [INFO] Listening at: http://0.0.0.0:8802 (4188)
+[2020-11-23 23:25:29 +0800] [4188] [INFO] Using worker: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+[2020-11-23 23:25:29 +0800] [4191] [INFO] Booting worker with pid: 4191
+[2020-11-23 23:28:32 +0800] [5050] [INFO] Starting gunicorn 20.0.4
+[2020-11-23 23:28:32 +0800] [5050] [INFO] Listening at: http://0.0.0.0:8802 (5050)
+[2020-11-23 23:28:32 +0800] [5050] [INFO] Using worker: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+[2020-11-23 23:28:32 +0800] [5054] [INFO] Booting worker with pid: 5054
+[2020-11-23 23:28:50,694] ERROR in app: Exception on /goldenhill/post/api [POST]
+Traceback (most recent call last):
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/API_PORT.py", line 191, in post
+    data = obj.run(data, choice, an, cn, cp)
+  File "/www/wwwroot/www.stargame.com/golden_hill_worm.py", line 261, in run
+    data = self.fight()
+  File "/www/wwwroot/www.stargame.com/golden_hill_worm.py", line 198, in fight
+    imgelement = self.driver.find_element_by_xpath('//div[@class="geetest_item_wrap"]/img')  # 定位验证码
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class="geetest_item_wrap"]/img"}
+  (Session info: headless chrome=80.0.3987.100)
+
+[2020-11-23 23:46:25 +0800] [9309] [INFO] Starting gunicorn 20.0.4
+[2020-11-23 23:46:25 +0800] [9309] [INFO] Listening at: http://0.0.0.0:8802 (9309)
+[2020-11-23 23:46:25 +0800] [9309] [INFO] Using worker: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+[2020-11-23 23:46:25 +0800] [9312] [INFO] Booting worker with pid: 9312
+[2020-11-23 23:49:03,281] ERROR in app: Exception on /goldenhill/post/api [POST]
+Traceback (most recent call last):
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/API_PORT.py", line 191, in post
+    data = obj.run(data, choice, an, cn, cp)
+  File "/www/wwwroot/www.stargame.com/golden_hill_worm.py", line 261, in run
+    data = self.fight()
+  File "/www/wwwroot/www.stargame.com/golden_hill_worm.py", line 198, in fight
+    imgelement = self.driver.find_element_by_xpath('//div[@class="geetest_item_wrap"]/img')  # 定位验证码
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class="geetest_item_wrap"]/img"}
+  (Session info: headless chrome=80.0.3987.100)
+
+[2020-11-23 23:51:29 +0800] [10903] [INFO] Starting gunicorn 20.0.4
+[2020-11-23 23:51:29 +0800] [10903] [INFO] Listening at: http://0.0.0.0:8802 (10903)
+[2020-11-23 23:51:29 +0800] [10903] [INFO] Using worker: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+[2020-11-23 23:51:29 +0800] [10906] [INFO] Booting worker with pid: 10906
+[2020-11-23 23:53:04,743] ERROR in app: Exception on /goldenhill/post/api [POST]
+Traceback (most recent call last):
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/API_PORT.py", line 191, in post
+    data = obj.run(data, choice, an, cn, cp)
+  File "/www/wwwroot/www.stargame.com/golden_hill_worm.py", line 261, in run
+    data = self.fight()
+  File "/www/wwwroot/www.stargame.com/golden_hill_worm.py", line 198, in fight
+    imgelement = self.driver.find_element_by_xpath('//div[@class="geetest_item_wrap"]/img')  # 定位验证码
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class="geetest_item_wrap"]/img"}
+  (Session info: headless chrome=80.0.3987.100)
+
+[2020-11-24 00:00:14 +0800] [14070] [INFO] Starting gunicorn 20.0.4
+[2020-11-24 00:00:14 +0800] [14070] [INFO] Listening at: http://0.0.0.0:8802 (14070)
+[2020-11-24 00:00:14 +0800] [14070] [INFO] Using worker: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+[2020-11-24 00:00:14 +0800] [14073] [INFO] Booting worker with pid: 14073
+[2020-11-24 00:00:37,339] ERROR in app: Exception on /goldenhill/post/api [POST]
+Traceback (most recent call last):
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/API_PORT.py", line 191, in post
+    data = obj.run(data, choice, an, cn, cp)
+  File "/www/wwwroot/www.stargame.com/golden_hill_worm.py", line 261, in run
+    data = self.fight()
+  File "/www/wwwroot/www.stargame.com/golden_hill_worm.py", line 198, in fight
+    imgelement = self.driver.find_element_by_xpath('//div[@class="geetest_item_wrap"]/img')  # 定位验证码
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class="geetest_item_wrap"]/img"}
+  (Session info: headless chrome=80.0.3987.100)
+
+[2020-11-24 00:17:21,852] ERROR in app: Exception on /goldenhill/post/api [POST]
+Traceback (most recent call last):
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/API_PORT.py", line 191, in post
+    data = obj.run(data, choice, an, cn, cp)
+  File "/www/wwwroot/www.stargame.com/golden_hill_worm.py", line 261, in run
+    data = self.fight()
+  File "/www/wwwroot/www.stargame.com/golden_hill_worm.py", line 198, in fight
+    imgelement = self.driver.find_element_by_xpath('//div[@class="geetest_item_wrap"]/img')  # 定位验证码
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class="geetest_item_wrap"]/img"}
+  (Session info: headless chrome=80.0.3987.100)
+
+[2020-11-24 00:23:31,465] ERROR in app: Exception on /goldenhill/post/api [POST]
+Traceback (most recent call last):
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/API_PORT.py", line 190, in post
+    obj = GoldenHill(ch)
+  File "/www/wwwroot/www.stargame.com/golden_hill_worm.py", line 39, in __init__
+    self.driver = webdriver.Chrome('/usr/local/bin/chromedriver', chrome_options=self.options)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/chrome/webdriver.py", line 81, in __init__
+    desired_capabilities=desired_capabilities)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 252, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: DevToolsActivePort file doesn't exist
+
+[2020-11-24 00:23:48,804] ERROR in app: Exception on /goldenhill/post/api [POST]
+Traceback (most recent call last):
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/API_PORT.py", line 191, in post
+    data = obj.run(data, choice, an, cn, cp)
+  File "/www/wwwroot/www.stargame.com/golden_hill_worm.py", line 261, in run
+    data = self.fight()
+  File "/www/wwwroot/www.stargame.com/golden_hill_worm.py", line 198, in fight
+    imgelement = self.driver.find_element_by_xpath('//div[@class="geetest_item_wrap"]/img')  # 定位验证码
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class="geetest_item_wrap"]/img"}
+  (Session info: headless chrome=80.0.3987.100)
+
+[2020-11-24 00:30:19 +0800] [20907] [INFO] Starting gunicorn 20.0.4
+[2020-11-24 00:30:19 +0800] [20907] [INFO] Listening at: http://0.0.0.0:8802 (20907)
+[2020-11-24 00:30:19 +0800] [20907] [INFO] Using worker: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+[2020-11-24 00:30:19 +0800] [20918] [INFO] Booting worker with pid: 20918
+[2020-11-24 00:50:42,441] ERROR in app: Exception on /goldenhill/post/api [POST]
+Traceback (most recent call last):
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/API_PORT.py", line 191, in post
+    data = obj.run(data, choice, an, cn, cp)
+  File "/www/wwwroot/www.stargame.com/golden_hill_worm.py", line 262, in run
+    data = self.fight()
+  File "/www/wwwroot/www.stargame.com/golden_hill_worm.py", line 199, in fight
+    imgelement = self.driver.find_element_by_xpath('//div[@class="geetest_item_wrap"]/img')  # 定位验证码
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class="geetest_item_wrap"]/img"}
+  (Session info: headless chrome=80.0.3987.100)
+
+[2020-11-24 00:55:31,873] ERROR in app: Exception on /goldenhill/post/api [POST]
+Traceback (most recent call last):
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/API_PORT.py", line 191, in post
+    data = obj.run(data, choice, an, cn, cp)
+  File "/www/wwwroot/www.stargame.com/golden_hill_worm.py", line 262, in run
+    data = self.fight()
+  File "/www/wwwroot/www.stargame.com/golden_hill_worm.py", line 199, in fight
+    imgelement = self.driver.find_element_by_xpath('//div[@class="geetest_item_wrap"]/img')  # 定位验证码
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class="geetest_item_wrap"]/img"}
+  (Session info: headless chrome=80.0.3987.100)
+
+[2020-11-24 00:58:19 +0800] [27417] [INFO] Starting gunicorn 20.0.4
+[2020-11-24 00:58:19 +0800] [27417] [INFO] Listening at: http://0.0.0.0:8802 (27417)
+[2020-11-24 00:58:19 +0800] [27417] [INFO] Using worker: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+[2020-11-24 00:58:19 +0800] [27420] [INFO] Booting worker with pid: 27420
+[2020-11-29 00:35:59 +0800] [448] [INFO] Starting gunicorn 20.0.4
+[2020-11-29 00:35:59 +0800] [448] [INFO] Listening at: http://0.0.0.0:8802 (448)
+[2020-11-29 00:35:59 +0800] [448] [INFO] Using worker: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+[2020-11-29 00:35:59 +0800] [451] [INFO] Booting worker with pid: 451
+[2020-11-30 10:36:27,067] ERROR in app: Exception on /perfectmany/post/api [POST]
+Traceback (most recent call last):
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/API_PORT.py", line 146, in post
+    obj = PerfectMany(url)
+  File "/www/wwwroot/www.stargame.com/perfect_many_worm.py", line 31, in __init__
+    self.driver = webdriver.Chrome('/usr/local/bin/chromedriver', chrome_options=self.options)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/chrome/webdriver.py", line 81, in __init__
+    desired_capabilities=desired_capabilities)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 252, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: DevToolsActivePort file doesn't exist
+
+[2020-11-30 10:37:31,093] ERROR in app: Exception on /perfectmany/post/api [POST]
+Traceback (most recent call last):
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/API_PORT.py", line 147, in post
+    data = obj.run(an, cn, cp, dis, ser)
+  File "/www/wwwroot/www.stargame.com/perfect_many_worm.py", line 185, in run
+    self.driver.get(self.url)  # 打开网页
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: timeout: Timed out receiving message from renderer: -40.640
+  (Session info: headless chrome=80.0.3987.100)
+
+[2020-11-30 10:42:25,680] ERROR in app: Exception on /perfectmany/post/api [POST]
+Traceback (most recent call last):
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/API_PORT.py", line 146, in post
+    obj = PerfectMany(url)
+  File "/www/wwwroot/www.stargame.com/perfect_many_worm.py", line 31, in __init__
+    self.driver = webdriver.Chrome('/usr/local/bin/chromedriver', chrome_options=self.options)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/chrome/webdriver.py", line 81, in __init__
+    desired_capabilities=desired_capabilities)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 252, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: DevToolsActivePort file doesn't exist
+
+[2020-11-30 10:43:48 +0800] [3254] [INFO] Starting gunicorn 20.0.4
+[2020-11-30 10:43:48 +0800] [3254] [INFO] Listening at: http://0.0.0.0:8802 (3254)
+[2020-11-30 10:43:48 +0800] [3254] [INFO] Using worker: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+[2020-11-30 10:43:48 +0800] [3261] [INFO] Booting worker with pid: 3261
+[2020-11-30 10:45:33,184] ERROR in app: Exception on /perfectmany/post/api [POST]
+Traceback (most recent call last):
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/stargame_venv/lib/python3.6/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/www/wwwroot/www.stargame.com/API_PORT.py", line 147, in post
+    data = obj.run(an, cn, cp, dis, ser)
+  File "/www/wwwroot/www.stargame.com/perfect_many_worm.py", line 191, in run
+    a = self.save()
+  File "/www/wwwroot/www.stargame.com/perfect_many_worm.py", line 181, in save
+    return statue
+UnboundLocalError: local variable 'statue' referenced before assignment
+[2020-12-02 08:55:07 +0800] [1683] [INFO] Starting gunicorn 20.0.4
+[2020-12-02 08:55:07 +0800] [1683] [INFO] Listening at: http://0.0.0.0:8802 (1683)
+[2020-12-02 08:55:07 +0800] [1683] [INFO] Using worker: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+[2020-12-02 08:55:07 +0800] [1748] [INFO] Booting worker with pid: 1748
+[2020-12-02 08:55:11 +0800] [2744] [INFO] Starting gunicorn 20.0.4
+[2020-12-06 22:12:18 +0800] [1642] [INFO] Starting gunicorn 20.0.4
+[2020-12-06 22:12:18 +0800] [1642] [INFO] Listening at: http://0.0.0.0:8802 (1642)
+[2020-12-06 22:12:18 +0800] [1642] [INFO] Using worker: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+[2020-12-06 22:12:18 +0800] [1754] [INFO] Booting worker with pid: 1754
+[2020-12-06 22:12:23 +0800] [2548] [INFO] Starting gunicorn 20.0.4
+[2020-12-10 19:14:29 +0800] [28730] [INFO] Starting gunicorn 20.0.4
+[2020-12-10 19:14:29 +0800] [28730] [INFO] Listening at: http://0.0.0.0:8802 (28730)
+[2020-12-10 19:14:29 +0800] [28730] [INFO] Using worker: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+[2020-12-10 19:14:29 +0800] [28733] [INFO] Booting worker with pid: 28733
+[2020-12-12 14:58:19 +0800] [16418] [INFO] Starting gunicorn 20.0.4
+[2020-12-12 14:58:19 +0800] [16418] [INFO] Listening at: http://0.0.0.0:8802 (16418)
+[2020-12-12 14:58:19 +0800] [16418] [INFO] Using worker: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+[2020-12-12 14:58:19 +0800] [16421] [INFO] Booting worker with pid: 16421
